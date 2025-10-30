@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0a0a0a;
+    --secondary-color: #1a1a1a;
+    --accent-color: #00ff88;
+    --text-color: #ffffff;
+    --text-secondary: #a0a0a0;
+    --card-bg: #1a1a1a;
+    --border-color: #2a2a2a;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 2rem 5%;
+    border-bottom: 1px solid var(--border-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+}
+
+.tagline {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    padding: 6rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, var(--accent-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+}
+
+.visualization-section {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.visualization-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.viz-intro {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+#system-visualization {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.service-card p {
+    color: var(--text-secondary);
+}
+
+.experience {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.experience-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.approach-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.step h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.step p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.contact {
+    text-align: center;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    border-radius: 8px;
+    padding: 6rem 5%;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+footer {
+    padding: 2rem 5%;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 4rem 5%;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-steps {
+        grid-template-columns: 1fr;
+    }
+
+    #system-visualization {
+        height: 400px;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+}
+
+/* D3 Visualization Styles */
+.layer-group {
+    cursor: pointer;
+}
+
+.layer-rect {
+    transition: fill 0.3s;
+}
+
+.feedback-loop {
+    fill: none;
+    stroke: var(--accent-color);
+    stroke-width: 2;
+    opacity: 0.6;
+}
+
+.feedback-arrow {
+    fill: var(--accent-color);
+    opacity: 0.6;
+}
+
+.layer-label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    fill: var(--text-color);
+}
+
+.data-flow {
+    fill: none;
+    stroke: rgba(0, 255, 136, 0.3);
+    stroke-width: 1;
+}
+
+.node-circle {
+    fill: var(--accent-color);
+    opacity: 0.8;
+}
